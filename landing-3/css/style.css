@@ -134,7 +134,21 @@ a {
   padding-bottom: 40px;
 }
 .app__screen--1 {
-  background: url("../img/home-bg.png") bottom -105px center no-repeat;
+  background: url("../img/home-bg.png") center/cover no-repeat;
+  padding-bottom: 50px;
+}
+.app__screen--1::after {
+  position: absolute;
+  content: "";
+  width: 143px;
+  height: 319px;
+  bottom: -125px;
+  right: 0;
+  background: url("../img/bg-elem.png") center no-repeat;
+}
+.app__screen--1 .btn-wrapper {
+  position: relative;
+  z-index: 2;
 }
 .app__screen--3 {
   background: url("../img/call-bg.png") center/cover no-repeat;

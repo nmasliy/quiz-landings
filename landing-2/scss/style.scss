@@ -68,7 +68,7 @@ a {
   }
 
   &.is-disabled {
-    background-color: rgba($grey, .9);
+    background-color: rgba($grey, 0.9);
     color: #fff;
   }
 }
@@ -384,21 +384,21 @@ a {
 }
 
 .timer {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 4px;
   display: inline-flex;
   margin: 0 auto;
 }
-
 .flipdown {
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 293px;
-  
+
   .rotor-group {
     position: relative;
+    padding-right: 20px;
 
     &:first-child {
       display: none;
@@ -425,6 +425,7 @@ a {
       }
     }
   }
+
   .rotor-group:nth-child(n + 2):nth-child(-n + 3):after,
   .rotor-group:nth-child(n + 2):nth-child(-n + 3):before {
     width: 3px;
@@ -435,24 +436,44 @@ a {
     left: 85px;
   }
 
-  .rotor-group:nth-child(n+2):nth-child(-n+3):before {
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3):before {
     bottom: 27px;
   }
 
-  .rotor-group:nth-child(n+2):nth-child(-n+3):after {
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
     bottom: 16px;
   }
-  
+
   .rotor-top,
   .rotor-bottom {
-    background: linear-gradient(180deg, #363636 -52.6%, #333333 34.06%, #2B2B2B 83.59%, #212121 115.43%);
+    background: linear-gradient(
+      180deg,
+      #363636 -52.6%,
+      #333333 34.06%,
+      #2b2b2b 83.59%,
+      #212121 115.43%
+    );
   }
 }
-
-.flipdown .rotor, .flipdown .rotor-leaf, .flipdown .rotor-leaf-front, .flipdown .rotor-leaf-rear, .flipdown .rotor-top, .flipdown .rotor-bottom, .flipdown .rotor:after {
+.flipdown .rotor,
+.flipdown .rotor-leaf,
+.flipdown .rotor-leaf-front,
+.flipdown .rotor-leaf-rear,
+.flipdown .rotor-top,
+.flipdown .rotor-bottom,
+.flipdown .rotor:after {
   width: 37px;
 }
-.flipdown.flipdown__theme-dark .rotor, .flipdown.flipdown__theme-dark .rotor-top, .flipdown.flipdown__theme-dark .rotor-leaf-front,
-.flipdown.flipdown__theme-dark .rotor-bottom, .flipdown.flipdown__theme-dark .rotor-leaf-rear {
-  background: linear-gradient(180deg, #363636 -52.6%, #333333 34.06%, #2B2B2B 83.59%, #212121 115.43%);
+.flipdown.flipdown__theme-dark .rotor,
+.flipdown.flipdown__theme-dark .rotor-top,
+.flipdown.flipdown__theme-dark .rotor-leaf-front,
+.flipdown.flipdown__theme-dark .rotor-bottom,
+.flipdown.flipdown__theme-dark .rotor-leaf-rear {
+  background: linear-gradient(
+    180deg,
+    #363636 -52.6%,
+    #333333 34.06%,
+    #2b2b2b 83.59%,
+    #212121 115.43%
+  );
 }

@@ -386,7 +386,7 @@ a {
 }
 
 .timer {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 4px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -409,6 +409,7 @@ a {
 }
 .flipdown .rotor-group {
   position: relative;
+  padding-right: 20px;
 }
 .flipdown .rotor-group:first-child {
   display: none;
@@ -450,16 +451,25 @@ a {
 }
 .flipdown .rotor-top,
 .flipdown .rotor-bottom {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-52.6%, #363636), color-stop(34.06%, #333333), color-stop(83.59%, #2B2B2B), color-stop(115.43%, #212121));
-  background: linear-gradient(180deg, #363636 -52.6%, #333333 34.06%, #2B2B2B 83.59%, #212121 115.43%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-52.6%, #363636), color-stop(34.06%, #333333), color-stop(83.59%, #2b2b2b), color-stop(115.43%, #212121));
+  background: linear-gradient(180deg, #363636 -52.6%, #333333 34.06%, #2b2b2b 83.59%, #212121 115.43%);
 }
 
-.flipdown .rotor, .flipdown .rotor-leaf, .flipdown .rotor-leaf-front, .flipdown .rotor-leaf-rear, .flipdown .rotor-top, .flipdown .rotor-bottom, .flipdown .rotor:after {
+.flipdown .rotor,
+.flipdown .rotor-leaf,
+.flipdown .rotor-leaf-front,
+.flipdown .rotor-leaf-rear,
+.flipdown .rotor-top,
+.flipdown .rotor-bottom,
+.flipdown .rotor:after {
   width: 37px;
 }
 
-.flipdown.flipdown__theme-dark .rotor, .flipdown.flipdown__theme-dark .rotor-top, .flipdown.flipdown__theme-dark .rotor-leaf-front,
-.flipdown.flipdown__theme-dark .rotor-bottom, .flipdown.flipdown__theme-dark .rotor-leaf-rear {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-52.6%, #363636), color-stop(34.06%, #333333), color-stop(83.59%, #2B2B2B), color-stop(115.43%, #212121));
-  background: linear-gradient(180deg, #363636 -52.6%, #333333 34.06%, #2B2B2B 83.59%, #212121 115.43%);
+.flipdown.flipdown__theme-dark .rotor,
+.flipdown.flipdown__theme-dark .rotor-top,
+.flipdown.flipdown__theme-dark .rotor-leaf-front,
+.flipdown.flipdown__theme-dark .rotor-bottom,
+.flipdown.flipdown__theme-dark .rotor-leaf-rear {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-52.6%, #363636), color-stop(34.06%, #333333), color-stop(83.59%, #2b2b2b), color-stop(115.43%, #212121));
+  background: linear-gradient(180deg, #363636 -52.6%, #333333 34.06%, #2b2b2b 83.59%, #212121 115.43%);
 }

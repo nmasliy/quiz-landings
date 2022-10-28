@@ -109,7 +109,7 @@ a {
     transition: $transitionScreens;
     position: relative;
     background: url('../img/bg.png') center / cover no-repeat;
-  color: #fff;
+    color: #fff;
 
     .container {
       display: flex;
@@ -120,7 +120,21 @@ a {
     }
 
     &--1 {
-      background: url('../img/home-bg.png') bottom -105px center no-repeat;
+      background: url('../img/home-bg.png') center / cover no-repeat;
+      padding-bottom: 50px;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 143px;
+        height: 319px;
+        bottom: -125px;
+        right: 0;
+        background: url('../img/bg-elem.png') center no-repeat;
+      }
+      .btn-wrapper {
+        position: relative;
+        z-index: 2;
+      }
     }
 
     &--3 {
