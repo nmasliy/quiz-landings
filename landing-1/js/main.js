@@ -50,6 +50,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   })
 
+
   function initQuiz() {
     const $currentQuestion = document.querySelector('#currentQuestion')
 
@@ -59,6 +60,14 @@ window.addEventListener('DOMContentLoaded', function () {
     const $titleNum = document.querySelector('.quiz__title span')
     const $quizItems = document.querySelectorAll('.quiz__item')
     const $quizSteps = document.querySelectorAll('.quiz__step')
+
+    $quizInputs = document.querySelectorAll('.quiz__item input')
+    
+    $quizInputs.forEach($input => {
+      $input.addEventListener('input', () => {
+        $quizBtn.classList.remove('is-disabled')
+      })
+    })
 
     $quizBtn.addEventListener('click', async () => {
       if (activeIndex + 2 <= TOTAL_QUESTIONS) {
@@ -71,6 +80,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
         $titleNum.textContent = activeIndex + 1
         $currentQuestion.textContent = activeIndex + 1
+        $quizBtn.classList.add('is-disabled')
       } else {
         await goToScreenFrom($screenQuiz, $screenCheck)
         await new Promise(resolve => setTimeout(resolve, SCREEN_DELAY))
