@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Введи номер для проверки твоих бонусов</title>
+</head>
+
+<body>
+	<div class="app">
+		<div class="app__inner">
+			<div class="app__content">
+				<div class="app__screen app__screen--1 home is-active">
+					<div class="container">
+						<div class="title">
+							<div class="title-big">Дарим до</div>
+							<div class="title-accent"><span>2 000 грн</span></div>
+							<div class="title-sm">за прохождение опроса</div>
+						</div>
+						<button class="btn pulse home__btn">
+							<span>Пройти опрос</span>
+						</button>
+					</div>
+				</div>
+				<div class="app__screen app__screen--2 finish is-hide">
+					<div class="container">
+						<div class="title">
+							<div class="title-sm">Ваш номер выйграл</div>
+							<div class="title-accent">500 грн</div>
+						</div>
+						<div class="finish__title">Введите номер телефона 
+						для&nbsp;подтверждения</div>
+						<div class="phone-field">
+							<div class="phone-field__caption">Номер телефона:</div>
+							<input type="text" class="phone-field__input" placeholder="+380" value="+380 ">
+						</div>
+						<div class="btn-wrapper">
+							<div class="btn-arrow">
+								<img src="img/arrow.svg" width="29" height="21" alt="">
+								<span>Последний шаг <br>
+									и награда Ваша</span>
+							</div>
+							<button class="btn pulse finish__btn is-disabled">
+								<span>Забрать</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="app__screen app__screen--3 call is-hide">
+					<div class="container">
+						<div class="call__number-caption">Номер телефона:</div>
+						<div class="call__number">+380 088 899 11</div>
+						<div class="call__title">С Вами свяжется оператор, <br> ожидайте</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="comments">
+				<div class="container">
+					<div class="comments__header">
+						<div class="comments__header-avas">
+							<img src="img/liked-ava.png" width="49" height="26" alt="">
+							<span>1537 people like this</span>
+						</div>
+						<div class="comments__header-views">
+							<img src="img/eye.svg" width="20" height="20" alt="">
+							<span>541k</span>
+						</div>
+					</div>
+					<div class="comments__main">
+						<div class="comments__count">25 comments</div>
+						<ul class="comments__list">
+							<li class="comments__item">
+								<div class="comments__img">
+									<img src="img/ava-1.png" width="48" height="48" alt="">
+								</div>
+								<div class="comments__info">
+									<div class="comments__name">Екатерина</div>
+									<div class="comments__text">Все круто, бонус пришел</div>
+									<div class="comments__stat">
+										<a class="comments__link" href="#">Like</a>
+										<a class="comments__link" href="#">Reply</a>
+										<div class="comments__likes">
+											<img src="img/like.svg" width="12" height="13"  alt="">
+											<span>12</span>
+										</div>
+										<div class="comments__hours">12h</div>
+									</div>
+								</div>
+							</li>
+							<li class="comments__item">
+								<div class="comments__img">
+									<img src="img/ava-2.png" width="48" height="48" alt="">
+								</div>
+								<div class="comments__info">
+									<div class="comments__name">Антон</div>
+									<div class="comments__text">Реально работает, не верил</div>
+									<div class="comments__stat">
+										<a class="comments__link" href="#">Like</a>
+										<a class="comments__link" href="#">Reply</a>
+										<div class="comments__likes">
+											<img src="img/like.svg" width="12" height="13"  alt="">
+											<span>23</span>
+										</div>
+										<div class="comments__hours">13h</div>
+									</div>
+								</div>
+							</li>
+							<li class="comments__item">
+								<div class="comments__img">
+									<img src="img/ava-3.png" width="48" height="48" alt="">
+								</div>
+								<div class="comments__info">
+									<div class="comments__name">Забрал бонусы</div>
+									<div class="comments__text">Все круто, бонус пришел</div>
+									<div class="comments__stat">
+										<a class="comments__link" href="#">Like</a>
+										<a class="comments__link" href="#">Reply</a>
+										<div class="comments__likes">
+											<img src="img/like.svg" width="12" height="13"  alt="">
+											<span>4</span>
+										</div>
+										<div class="comments__hours">16h</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<a href="#" class="comments__btn">Load 10 more comments</a>
+					</div>
+				</div>
+			</section>
+			
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__item"><a href="#">Политика конфиденциальности</a></div>
+					<div class="footer__item"><a href="#">Договор оферта</a></div>
+					<div class="footer__item"><a href="#">Компания дисконт плюс работает с 2012 года</a></div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
