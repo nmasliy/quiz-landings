@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/flipdown.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Введи номер для проверки твоих бонусов</title>
 </head>
@@ -19,22 +20,23 @@
 			<div class="app__content">
 				<div class="app__screen app__screen--1 home is-active">
 					<div class="container">
-						<div class="title">
-							<div class="title-big">Дарим до</div>
-							<div class="title-accent"><span>2 000 грн</span></div>
-							<div class="title-sm">за прохождение опроса</div>
+						<div class="title">Ваш номер выйграл</div>
+						<div class="title-price">500 грн</div>
+						<div class="home__title">подтвердите свой номер <br>
+						для получения бонуса</div>
+						<div class="home__caption">До конца акции осталось</div>
+						<div class="timer">
+							<div id="flipdown" class="flipdown"></div>
 						</div>
-						<button class="btn pulse home__btn">
-							<span>Пройти опрос</span>
+						<button class="btn home__btn">
+							<span>Подтвердить номер</span>
 						</button>
 					</div>
 				</div>
 				<div class="app__screen app__screen--2 finish is-hide">
 					<div class="container">
-						<div class="title">
-							<div class="title-sm">Ваш номер выйграл</div>
-							<div class="title-accent">500 грн</div>
-						</div>
+						<div class="title">Ваш номер выйграл</div>
+						<div class="title-price">500 грн</div>
 						<div class="finish__title">Введите номер телефона 
 						для&nbsp;подтверждения</div>
 						<div class="phone-field">
@@ -147,7 +149,8 @@
 		</div>
 	</div>
 
-	<script src="https://unpkg.com/imask"></script>
+	<script src="js/flipdown.min.js"></script>
+	<script src="js/imask.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
