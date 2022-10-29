@@ -160,9 +160,6 @@ a {
   height: 100%;
   padding-bottom: 40px;
 }
-.app__screen--1 {
-  background: url("../img/home-bg.png") bottom center no-repeat, url("../img/bg.svg") center/cover no-repeat;
-}
 .app__screen.is-active {
   display: block;
 }
@@ -291,6 +288,13 @@ a {
 .home {
   padding-bottom: 100px;
   padding-top: 50px;
+}
+.home__img {
+  margin-top: auto;
+  padding-top: 40px;
+}
+.home .container {
+  height: 100vh;
 }
 .home__caption {
   text-transform: uppercase;

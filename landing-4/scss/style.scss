@@ -129,11 +129,6 @@ a {
       padding-bottom: 40px;
     }
 
-    &--1 {
-      background: url('../img/home-bg.png') bottom center no-repeat,
-        url('../img/bg.svg') center / cover no-repeat;
-    }
-
     &.is-active {
       display: block;
     }
@@ -257,6 +252,15 @@ a {
 .home {
   padding-bottom: 100px;
   padding-top: 50px;
+
+  &__img {
+    margin-top: auto;
+    padding-top: 40px;
+  }
+
+  .container {
+    height: 100vh;
+  }
 
   &__caption {
     text-transform: uppercase;
