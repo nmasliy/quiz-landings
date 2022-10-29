@@ -288,11 +288,16 @@ a {
 .home {
   padding-bottom: 100px;
   padding-top: 50px;
+  overflow: hidden;
 }
 .home__img {
   margin-top: auto;
   padding-top: 40px;
   text-align: center;
+}
+.home__img img {
+  max-width: 100%;
+  height: auto;
 }
 .home .container {
   height: 100vh;
